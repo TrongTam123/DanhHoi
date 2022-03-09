@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh khoi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header-container">
+                    <div class="header-left">
+                        <!-- Nav -->
+                        <div class="nav">
+                            <label for="nav__mobile-input" class="nav__bars-btn">
+                                    <i class="fa-solid fa-bars"></i> 
+                                    <span>Menu</span>
+                            </label>
+                            
+                            <input type="checkbox" hidden name="" class="nav__input" id="nav__mobile-input">
+
+                            <label for="nav__mobile-input" class="nav__overlay"></label>
+
+                            <nav class="nav__mobile">
+                                <label for="nav__mobile-input" class="nav__mobile-close">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </label>
+                                <ul class="nav__mobile-list">
+                                    <li>
+                                        <a href="#" class="nav__mobile-link active">
+                                            <i class="fa-solid fa-house nav-font__icon"></i>Trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav__mobile-link">
+                                            <i class="fa-solid fa-user-group nav-font__icon"></i>Giới thiệu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav__mobile-link">
+                                            <i class="fa-solid fa-comments nav-font__icon"></i>Tin tức
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav__mobile-link">
+                                            <i class="fa-solid fa-user-plus nav-font__icon"></i>Tuyển dụng
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="#" class="nav__mobile-link">
+                                            <i class="fa-solid fa-phone nav-font__icon"></i> Liên hệ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-logo">
+                        <img src="./assets/img/Logo.png" alt="">
+                    </div>
+                    <div class="header-right hide-on-mobile-tablet">
+                        <div class="header-right__phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                (+84) 971 23 23 23
+                            </span>
+                        </div>
+                        <div class="header-right__languages">
+                            <span class="header-right__languages--active">VN</span>
+                            <span>EN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="slider">
+            <div class="grid wide">
+                
+                <video class="video-slide video-slide--active" src="assets/img/video1.mp4" autoplay muted loop></video>
+                <video class="video-slide" src="assets/img/video2.mp4" autoplay muted loop></video>    
+                <video class="video-slide" src="assets/img/video4.mp4" autoplay muted loop></video>  
+                
+                <div class="slider-comment slider-comment--active">
+                    <div class="slider-content">
+                        <h3 class="slider-content__header">
+                            Nhơn Hội - New City
+                        </h3>
+                        <p class="slider-content__description">
+                            Sở hữu diện tích hơn 36ha, nằm trong quy 
+                            hoạch tổng thể của khu đô thị du lịch sinh 
+                            thái Nhơn Hội, thuộc khu kinh tế Nhơn Hội. 
+                            Định hướng phát triển không gian du lịch với 
+                            việc đẩy mạnh và khai thác những danh lam, 
+                            thắng cảnh nổi tiếng dọc bờ biển phía Đông.
+                        </p>
+                        <div class="slider-content__button">
+                            <a href="#">
+                                Tìm hiểu thêm
+                            </a>
+                            <img src="./assets/img/img_link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-position">
+                        <div class="slider-position__center">
+                            <div class="slider-position__heading">
+                                Vị trí:
+                            </div>
+                            <div class="slider-position__des">
+                                Trung tâm thủ đô Nhơn Hội - Quy Nhơn
+                            </div>
+                        </div>
+                        <div class="slider-position__lived">
+                            <div class="slider-position__heading">
+                                Đất ở:
+                            </div>
+                            <div class="slider-position__des">
+                                19.2 ha
+                            </div>
+                        </div>
+                        <div class="slider-position__traffic">
+                            <div class="slider-position__heading">
+                                Đất giao thông:
+                            </div>
+                            <div class="slider-position__des">
+                                11.5 ha
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn hide-on-mobile">
+                        <div class="slider-btn__select slider-btn__select--right hide-on-mobile">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="slider-btn__select slider-btn__select--left hide-on-mobile">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-comment">
+                    <div class="slider-content">
+                        <h3 class="slider-content__header">
+                            Nhơn Hội - New City1
+                        </h3>
+                        <p class="slider-content__description">
+                            Sở hữu diện tích hơn 36ha, nằm trong quy 
+                            hoạch tổng thể của khu đô thị du lịch sinh 
+                            thái Nhơn Hội, thuộc khu kinh tế Nhơn Hội. 
+                            Định hướng phát triển không gian du lịch với 
+                            việc đẩy mạnh và khai thác những danh lam, 
+                            thắng cảnh nổi tiếng dọc bờ biển phía Đông.
+                        </p>
+                        <div class="slider-content__button">
+                            <a href="#">
+                                Tìm hiểu thêm
+                            </a>
+                            <img src="./assets/img/img_link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-position">
+                        <div class="slider-position__center">
+                            <div class="slider-position__heading">
+                                Vị trí:
+                            </div>
+                            <div class="slider-position__des">
+                                Trung tâm thủ đô Nhơn Hội - Quy Nhơn
+                            </div>
+                        </div>
+                        <div class="slider-position__lived">
+                            <div class="slider-position__heading">
+                                Đất ở:
+                            </div>
+                            <div class="slider-position__des">
+                                19.2 ha
+                            </div>
+                        </div>
+                        <div class="slider-position__traffic">
+                            <div class="slider-position__heading">
+                                Đất giao thông:
+                            </div>
+                            <div class="slider-position__des">
+                                11.5 ha
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn">
+                        <div class="slider-btn__select">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="slider-btn__select">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-comment">
+                    <div class="slider-content">
+                        <h3 class="slider-content__header">
+                            Nhơn Hội - New City2
+                        </h3>
+                        <p class="slider-content__description">
+                            Sở hữu diện tích hơn 36ha, nằm trong quy 
+                            hoạch tổng thể của khu đô thị du lịch sinh 
+                            thái Nhơn Hội, thuộc khu kinh tế Nhơn Hội. 
+                            Định hướng phát triển không gian du lịch với 
+                            việc đẩy mạnh và khai thác những danh lam, 
+                            thắng cảnh nổi tiếng dọc bờ biển phía Đông.
+                        </p>
+                        <div class="slider-content__button">
+                            <a href="#">
+                                Tìm hiểu thêm
+                            </a>
+                            <img src="./assets/img/img_link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-position">
+                        <div class="slider-position__center">
+                            <div class="slider-position__heading">
+                                Vị trí:
+                            </div>
+                            <div class="slider-position__des">
+                                Trung tâm thủ đô Nhơn Hội - Quy Nhơn
+                            </div>
+                        </div>
+                        <div class="slider-position__lived">
+                            <div class="slider-position__heading">
+                                Đất ở:
+                            </div>
+                            <div class="slider-position__des">
+                                19.2 ha
+                            </div>
+                        </div>
+                        <div class="slider-position__traffic">
+                            <div class="slider-position__heading">
+                                Đất giao thông:
+                            </div>
+                            <div class="slider-position__des">
+                                11.5 ha
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn">
+                        <div class="slider-btn__select">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="slider-btn__select">
+                            <a href="#" class="slider-btn__link">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-navigation">
+                    <div class="slider-navigation__btn slider-navigation__btn--active">
+
+                    </div>
+                    <div class="slider-navigation__btn">
+                        
+                    </div>
+                    <div class="slider-navigation__btn">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="grid wide">
+                <div class="about-top">
+                    <div class="box">
+                        <h2>Về chúng tôi</h2>
+                    </div>
+                    <div class="about-top__title">
+                        <h4>CÔNG TY CỔ PHẨN BẤT ĐỘNG SẢN DANH KHÔI</h4>
+                        <h3>KIẾN TẠO CỘNG ĐỒNG THỊNH VƯỢNG</h3>
+                        <p>
+                            Trên hình trình hình thành và phát 
+                            triển, bằng niềm đam mê, nhiệt huyết
+                            , sự tập trung và kiên định với mục 
+                            tiêu đã đề ra Danh Khôi trở thành 
+                            nhà phát triển - đầu tư uy tín với 
+                            danh mục sản phẩm đa dạng bao gồm 
+                            bất động sản nghỉ dưỡng, căn hộ, 
+                            biệt thự, nhà phố ... ở vị trí chiến
+                            lược tại Tp. Hồ Chí Minh và các 
+                            tỉnh thành lân cận như Phan Thiết, 
+                            Nha Trang, Long An,...
+                        </p>
+                        <a href="#" class="btn">
+                            <span>Xem chi tiết</span>
+                            <img class="btn-arrows" src="./assets/img/img_link_grey.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-bottom">
+                    <div class="about-bottom-left">
+                        <img src="./assets/img/about.jpg" alt="">
+                    </div>
+                    <div class="about-bottom-right">
+                        <div class="about-bottom-right__des">
+                            <h4>2006</h4>
+                            <p>Thành lập công ty</p>   
+                        </div>
+                        <div class="about-bottom-right__des">
+                            <h4>305</h4>
+                            <p>Nhân sự</p>   
+                        </div>
+                        <div class="about-bottom-right__des">
+                            <h4>2</h4>
+                            <p>Chi nhánh và trụ sở</p>   
+                        </div>
+                        <div class="about-bottom-right__des">
+                            <h4>7</h4>
+                            <p>Công ty con và liên kết</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="acupuncture" style="background-image: url(./assets/img/view_background.jpg);">
+            <div class="grid wide">
+                <h3 class="acupuncture-heading">ĐẠO ĐỨC - UY TÍN- SÁNG TẠO - CHUYÊN NGHIỆP</h3>
+                </div>
+                <div class="acupuncture-body">
+                    <div class="grid wide">
+                        <div class="acupuncture-bottom">
+                            <div class="acupuncture-left-box">
+                                <div class="acupuncture-left-box__items">
+                                    <div class="acupuncture-left-box__img">
+                                        <img src="./assets/img/view1.jpg" alt="">
+                                    </div>
+                                   <div class="acupuncture-left-box__text">
+                                        <img class="acupuncture-left-box__text-img acupuncture-left-box__text-img--active" src="./assets/img/img_link_red.png" alt="">
+                                        <span class="acupuncture-left-box__text--active">
+                                            Tầm nhìn
+                                        </span>
+                                    </div>
+                                </div>
+                                 <div class="acupuncture-left-box__items ">
+                                    <div class="acupuncture-left-box__img">
+                                        <img src="./assets/img/view2.jpg" alt="">
+                                    </div>
+                                    <div class="acupuncture-left-box__text">
+                                        <img class="acupuncture-left-box__text-img" src="./assets/img/img_link_red.png" alt="">
+                                        <span>Sứ mệnh</span>
+                                    </div>
+                                </div>
+                                 <div class="acupuncture-left-box__items">
+                                    <div class="acupuncture-left-box__img">
+                                        <img src="./assets/img/view3.jpg" alt="">
+                                    </div>
+                                    <div class="acupuncture-left-box__text ">
+                                        <img class="acupuncture-left-box__text-img" src="./assets/img/img_link_red.png" alt="">
+                                        <span>Giá trị cốt lõi</span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="acupuncture-bottom-btn">
+                                    <a href="#" class="btn auto-center">
+                                        <span>Xem thêm</span>
+                                        <img class="btn-arrows" src="./assets/img/img_link_grey.png" alt="">
+                                    </a>
+                                </div>
+                            <div class="acupuncture-right">
+                                <div class="box">
+                                    <h2>Tầm nhìn - Sự nghiệp</h2>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+        </section>
+        <section class="project" style="background-image: url(./assets/img/project_background.jpg);">
+            <div class="grid wide">
+                <div class="project-container">
+                    <div class="project-box">
+                        <div class="project-left">
+                            <div class="box">
+                                <h2 style="margin-top: 100px;">Dự án</h2>
+                            </div>
+                        </div>
+                        <div class="project-mid">
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                            <div class="project-mid-item">
+                                <img src="./assets/img/project3.jpg" alt="">
+                                <div class="project-mid-overlay"></div>
+                                <div class="project-mid-title">
+                                    <h3>RESORT FIVE STARS</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <h3>Những dự án</h3>
+                        <h2>Danh Khôi đã đồng hành</h2>
+                        <ul class="project-right-list">
+                            <li class="project-right-items">
+                                <img class="project-right-img project-right-img--active" src="./assets/img/img_link_red.png" alt=""> 
+                                <span class="project-righ__text project-righ__text--active">Tất cả</span>
+                            </li>
+                            <li class="project-right-items">
+                                <img class="project-right-img" src="./assets/img/img_link_red.png" alt=""> 
+                                <span class="project-righ__text">Đã triển khai</span>
+                            </li>
+                            <li class="project-right-items">
+                                <img class="project-right-img" src="./assets/img/img_link_red.png" alt=""> 
+                                <span class="project-righ__text">Đang triển khai</span>
+                            </li>
+                            <li class="project-right-items">
+                                <img class="project-right-img" src="./assets/img/img_link_red.png" alt=""> 
+                                <span class="project-righ__text">Đát nền</span>
+                            </li>
+                        </ul>
+                        <div class="project-right-btn">
+                            <a href="#" class="btn auto-center">
+                                <span>Xem thêm</span>
+                                <img class="btn-arrows" src="./assets/img/img_link_grey.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="grid wide">
+                <div class="news-app">
+                    <div class="news-left">
+                        <div class="news-left-top">
+                            <ul class="news-left-top__list">
+                                <li class="news-left-top__items news-left-top__items--active">
+                                    Tất cả
+                                </li>
+                                <li class="news-left-top__items">
+                                    Tin Danh Khôi
+                                </li>
+                                <li class="news-left-top__items">
+                                    Tin thị trường
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="news-bottom">
+                            <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-4">
+                                    <div class="news-bottom-items news-bottom-items--acitve">
+                                        <div class="news-bottom-title">
+                                            <p>26 - 09 - 2019</p>
+                                            <p>Tin danh khôi</p>
+                                        </div>
+                                        <div class="news-bottom-heading">
+                                            ĐẠI TIỆC TRI ÂN KHÁCH HÀNG - làm tăng gia tăng cho dự án NHƠN HỘI NEW CITY
+                                        </div>
+                                        <div class="news-bottom-des">
+                                            Ngày 28/9/2019 tại Trung Tâm Hội 
+                                            Nghị White Palace, Công ty Cổ phần 
+                                            BĐS Danh Khôi (DKR) đã tổ chức sự kiện 
+                                            lễ bốc thăm và trao giải dành cho quý 
+                                            khách hàng.
+                                        </div>
+                                        <div class="news-bottom-arrow">
+                                            <img src="./assets/img/img_link.png" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col l-4">
+                                    <div class="news-bottom-items">
+                                        <div class="news-bottom-overlay"></div>
+                                        <div class="news-bottom-title">
+                                            <p>24 - 09 - 2019</p>
+                                            <p>Tin danh khôi - Tin thị trường</p>
+                                        </div>
+                                        <div class="news-bottom-heading">
+                                            Thị trường Chuyển mình làm tăng gia tăng sức hút
+                                            cho dự án nhơn hội new city
+                                        </div>
+                                        <div class="news-bottom-des">
+                                            1.300 giao dịch thành công tại dự án Nhơn Hội
+                                            New City đã phần nào cho thấy sức hút của khu vực
+                                            Nhơn Hội - Quy Nhơn (Bình Định) đối với thị trường
+                                        </div>
+                                        <div class="news-bottom-arrow">
+                                            <img src="./assets/img/img_link_red.png" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col l-4">
+                                    <div class="news-bottom-items">
+                                        <div class="news-bottom-title">
+                                            <p>22 - 09 - 2019</p>
+                                            <p>Tin danh khôi | Tin Thị trường</p>
+                                        </div>
+                                        <div class="news-bottom-heading">
+                                            Chấp nhận đầu tư dự án nhợn hội new city hơn 9.000
+                                            tỷ tại bình định
+                                        </div>
+                                        <div class="news-bottom-des">
+                                            UBND tỉnh Bình Định vừa có quyết định chấp nhận 
+                                            chủ động dầu tư dự án Nhơn Hội NewCity(Phần khu 2)
+                                            do Công ty cổ phần động sản Phát đạt làm chủ đầu tư
+                                        </div>
+                                        <div class="news-bottom-arrow">
+                                            <img src="./assets/img/img_link_red.png" alt="">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="news-right">
+                        <div class="news-right-box">
+                            <div class="box">
+                                <h2>
+                                    Theo dòng sự kiện
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="news-right-bottom">
+                            <div class="news-right-bottom-slider">
+                                <div class="news-right-bottom-slider__btn news-right-bottom-slider__btn--active"></div>
+                                <div class="news-right-bottom-slider__btn"></div>
+                                <div class="news-right-bottom-slider__btn"></div>
+                            </div>
+                            <div class="news-right-bottom-btn">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recruitment" style="background-image: url(./assets/img/recuiment.jpg);">
+            <div class="grid wide">
+                <div class="recruitment-app">
+                    <div class="recruitment-left">
+                        <div class="recruitment-left-top">
+                            <div class="box">
+                                <h2>
+                                    tuyển dụng
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="recruitment-left-top">
+                            <img src="./assets/img/hr.png" alt="">
+                            <img src="./assets/img/hr.png" alt="">
+                            <img src="./assets/img/hr.png" alt="">
+                            <img src="./assets/img/hr.png" alt="">
+                            <img src="./assets/img/hr.png" alt="">
+                        </div>
+                    </div>
+                    <div class="recruitment-right">
+                        <div class="recruitment-right-top">
+                            <div class="recruitment-right-top-left">
+                                <p>Chọn vị trí</p>
+                                <select>
+                                    <option value="0" selected>Tất cả</option>
+                                    <option value="1">Trong nước</option>
+                                    <option value="2">Ngoài nước</option>
+                                </select>   
+                            </div>
+                            <div class="recruitment-right-top-right">
+                                VỚI DANH KHÔI, CÔNG VIỆC LÀ ĐAM MÊ
+                            </div>
+                        </div>
+                        <div class="recruitment-right-bottom">
+                            <div class="recruitment-right-bottom-top">
+                                <div class="recruitment-right-bottom-top-left">
+                                    <ul class="recruitment-right-bottom-top__list">
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img recruitment-right-bottom-top__img--active" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text recruitment-right-bottom-top__text--active">Chuyên Viên Tư Vấn Bất Động Sản / Chuyển Nhượng / Cho Thuê - HCM</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên hỗ trợ kinh doanh</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên thu hồi công nợ</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên thu hồi công nợ</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên thu hồi công nợ</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên thu hồi công nợ</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên viên thu hồi công nợ</span>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <div class="recruitment-hr"></div>
+                                <div class="recruitment-right-bottom-top-right">
+                                    <ul class="recruitment-right-bottom-top__list">
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Trưởng phòng Marketing (Bắt buộc hiểu Ngành Bất Động Sản</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Chuyên Viên Pháp Lý</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Quản lý xây dựng</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Quản lý thiết kế</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Quản lý thiết kế</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Quản lý thiết kế</span>
+                                        </li>
+                                        <li class="recruitment-right-bottom-top__items">
+                                            <img class="recruitment-right-bottom-top__img" src="./assets/img/img_link.png" alt="">
+                                            <span class="recruitment-right-bottom-top__text">Quản lý thiết kế</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="recruitment-right-bottom-bot">
+                                <div class="recruitment-right-bottom-bot-top">
+                                    <h4>
+                                        VỚI DANH KHÔI, CÔNG VIỆC LÀ ĐAM MÊ
+                                    </h4>
+                                    <p>
+                                        Bạn yêu thích môi trường làm việc trẻ trung 
+                                        và đậm tinh thần năng động? Gia nhập Danh Khôi 
+                                        và khám phá ngay!
+                                    </p>
+                                </div>
+                                <div class="recruitment-right-bottom-bot-under">
+                                    <div class="recruitment-right-bottom-bot-under-btn">
+                                        <a href="" class="btn">
+                                            <span>Xem thêm</span>
+                                            <img src="./assets/img/img_link_red.png" alt="" class="btn-arrows">
+                                        </a>
+                                    </div>
+                                    <div class="recruitment-right-bottom-bot-under-btn-des">
+                                        <p>Hồ sơ gửi về địa chỉ email:
+                                            <span>tuyendung@danhkhoi.com.vn</span>
+                                        </p>   
+                                        <p>Hoặc gọi về phòng nhân sự: 
+                                            <span>028 39677 117</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer-top">
+                    <h3>Liên hệ</h3>
+                    <p>Chúng tôi luôn lắng nghe</p>       
+                </div>
+                <div class="footer-logo">
+                    <img src="./assets/img/Logo.png" alt="">
+                </div>
+                <div class="footer-bottom">
+                    <div class="row footer-bottom-app">
+                        <div class="col l-5 m-12 c-12">
+                            <div class="footer-bottom__heading">
+                                Thông tin liên hệ
+                            </div>
+                            <div class="footer-bottom__box">
+                                <ul class="footer-bottom__list">
+                                    <li class="footer-bottom__items">
+                                        <i class="fa-solid fa-building"></i>
+                                        <span>Công Ty Cổ Phần Bất Động Sản Danh Khôi</span>
+                                    </li>
+                                    <li class="footer-bottom__items">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div>
+                                            <p>Trụ sở chính</p>
+                                            <p>Số 3, Trần Nhật Duật, Phường Tân Định, Quận 1, TP.HCM</p>
+                                        </div>
+                                    </li>
+                                    <li class="footer-bottom__items">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>028 39677 117</span>
+                                    </li>
+                                    <li class="footer-bottom__items">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>csks@danhkhoi.com.vn - tuyendung@danhkhoi.com.vn</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-bottom__form">
+                                <input type="text" placeholder="Nhập email để đăng ký nhận tin">
+                                <button class="footer-bottom__btn">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-1 m-0"></div>
+                        <div class="col l-6 m-12 c-12 footer-bottom-app-2">
+                            <div class="footer-form__user">
+                                <input type="text" placeholder="Họ tên">
+                                <input type="text" placeholder="Số điện thoại">
+                            </div>
+                            <div class="footer-form__email">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="footer-form__des">
+                                <textarea placeholder="Nội dung"></textarea>
+                            </div>
+                            <div class="footer-form__submit">
+                                <a href="#">gửi</a>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer-socials">
+            <div class="grid wide">
+                <div class="footer-socials-app">
+                    <div class="footer-socials-left">
+                        <div class="footer-socials-left__text">
+                            Kết nối với chúng tôi:
+                        </div>
+                        <i class="fa-solid fa-basketball"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tumblr"></i>
+                    </div>
+                    <div class="footer-socials-right">
+                        © Bản quyền thuộc về Công ty Cổ phần Bất Động Sản Danh Khôi.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    </script>
+</body>
+</html>
+
